@@ -39,22 +39,22 @@ D. `student['Favorite Teacher'].name`
 E. `student.courseLoad[0]`
 
 ## Question 13 - Arithmetic
-A. `'32'` - `2` is coerced to a string and concatenated.
-B. `1` - No string `-` operation, so `'3'` is coerced to a number and subtraction occurs.
-C. `3` - `null` coerces to `0`, so `3 + 0 = 3`.
-D. `'3null'` - `null` coerces to the string `'null'` and concatenation occurs.
-E. `4` - `true` coerces to `1`, so `1 + 3 = 4`.
-F. `0` - `false` coerces to `0` and `null` coerces to `0`, so `0 + 0 = 0`.
-G. `'3undefined'` - `undefined` coerces to the string `'undefined'` and concatenation occurs.
-H. `NaN` - `undefined` coerces to `NaN`, and any arithmetic with `NaN` returns `NaN`.
+- A. `'32'` - `2` is coerced to a string and concatenated.
+- B. `1` - No string `-` operation, so `'3'` is coerced to a number and subtraction occurs.
+- C. `3` - `null` coerces to `0`, so `3 + 0 = 3`.
+- D. `'3null'` - `null` coerces to the string `'null'` and concatenation occurs.
+- E. `4` - `true` coerces to `1`, so `1 + 3 = 4`.
+- F. `0` - `false` coerces to `0` and `null` coerces to `0`, so `0 + 0 = 0`.
+- G. `'3undefined'` - `undefined` coerces to the string `'undefined'` and concatenation occurs.
+- H. `NaN` - `undefined` coerces to `NaN`, and any arithmetic with `NaN` returns `NaN`.
 
 ## Question 14 - Comparison
-A. `true` - `'2'` is coerced to a number, and `2 > 1` is true.
-B. `false` - Both are strings so comparison is alphabetical. `'2'` comes after `'1'`, so `'2' < '12'` is false.
-C. `true` - `==` coerces types, so `'2'` becomes `2` and `2 == 2` is true.
-D. `false` - `===` does not coerce types. A number and string are never strictly equal.
-E. `false` - `true` coerces to `1`, and `1 == 2` is false.
-F. `true` - `Boolean(2)` is `true` since any non-zero number is truthy, so `true === true` is true.
+- A. `true` - `'2'` is coerced to a number, and `2 > 1` is true.
+- B. `false` - Both are strings so comparison is alphabetical. `'2'` comes after `'1'`, so `'2' < '12'` is false.
+- C. `true` - `==` coerces types, so `'2'` becomes `2` and `2 == 2` is true.
+- D. `false` - `===` does not coerce types. A number and string are never strictly equal.
+- E. `false` - `true` coerces to `1`, and `1 == 2` is false.
+- F. `true` - `Boolean(2)` is `true` since any non-zero number is truthy, so `true === true` is true.
 
 ## Question 15 - == vs ===
 `==` coerces both values to the same type before comparing. `===` compares both value and type with no coercion. For example, `2 == '2'` is `true` but `2 === '2'` is `false`.
